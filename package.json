@@ -14,8 +14,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "nodemon index.js"
+    "dev": "node ./src/index.js",
+    "start": "node ./src/index.js"
   },
   "eslintConfig": {
     "extends": [
