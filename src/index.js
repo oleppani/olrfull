@@ -5,9 +5,6 @@ const path = require('path')
 
 const fetch = require('node-fetch')
 
-
-
-
 app.use(cors())
 app.use(express.static('public'))
 app.get('*', (req, res) => {
