@@ -3,22 +3,8 @@ const app = express()
 const cors = require('cors')
 const path = require('path')
 
-const fetch = require('node-fetch')
 const request = require('request')
 
-function fetchaa(url){
-    const sis = fetch(url, {
-        crossDomain:true,
-        method: 'GET',
-        headers: {'Content-Type':'application/json',
-        'Access-Control-Allow-Origin': 'https://pokeapi.co' },
-      }).then((response) => 
-      {
-          console.log(response)
-          return(response)
-      })
-      .catch(console.error);
-}
 app.use(cors({
     origin: 'http://localhost:3001',
     credentials: true
