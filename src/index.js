@@ -5,10 +5,7 @@ const path = require('path')
 
 const request = require('request')
 
-app.use(cors({
-    origin: 'http://localhost:3001',
-    credentials: true
-}));
+app.use(cors())
 app.use(express.static('public'))
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
